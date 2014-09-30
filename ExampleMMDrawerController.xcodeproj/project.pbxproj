@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7B50D5819DB542C000681E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5719DB542C000681E8 /* AppDelegate.swift */; };
+		D7B50D5B19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */; };
+		D7B50D5D19DB542C000681E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5C19DB542C000681E8 /* ViewController.swift */; };
+		D7B50D6019DB542C000681E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D5E19DB542C000681E8 /* Main.storyboard */; };
+		D7B50D6219DB542C000681E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D6119DB542C000681E8 /* Images.xcassets */; };
+		D7B50D6519DB542C000681E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D6319DB542C000681E8 /* LaunchScreen.xib */; };
+		D7B50D7119DB542C000681E8 /* ExampleMMDrawerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7019DB542C000681E8 /* ExampleMMDrawerControllerTests.swift */; };
+		D7B50D7F19DB54A2000681E8 /* AnimatedMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7B19DB54A2000681E8 /* AnimatedMenuButton.swift */; };
+		D7B50D8019DB54A2000681E8 /* DrawerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7C19DB54A2000681E8 /* DrawerBarButtonItem.swift */; };
+		D7B50D8119DB54A2000681E8 /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7D19DB54A2000681E8 /* DrawerController.swift */; };
+		D7B50D8219DB54A2000681E8 /* DrawerVisualState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7E19DB54A2000681E8 /* DrawerVisualState.swift */; };
+		D7B50D8819DB554C000681E8 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D8419DB554C000681E8 /* CenterViewController.swift */; };
+		D7B50D8919DB554C000681E8 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D8519DB554C000681E8 /* LeftMenuViewController.swift */; };
+		D7B50D8A19DB554C000681E8 /* MainLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D8619DB554C000681E8 /* MainLeftMenuViewController.swift */; };
+		D7B50D8B19DB554C000681E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D8719DB554C000681E8 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7B50D6B19DB542C000681E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7B50D4A19DB542C000681E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B50D5119DB542C000681E8;
+			remoteInfo = ExampleMMDrawerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7B50D5219DB542C000681E8 /* ExampleMMDrawerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMMDrawerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B50D5619DB542C000681E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B50D5719DB542C000681E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleMMDrawerController.xcdatamodel; sourceTree = "<group>"; };
+		D7B50D5C19DB542C000681E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7B50D5F19DB542C000681E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7B50D6119DB542C000681E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7B50D6419DB542C000681E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D7B50D6A19DB542C000681E8 /* ExampleMMDrawerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleMMDrawerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B50D6F19DB542C000681E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B50D7019DB542C000681E8 /* ExampleMMDrawerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMMDrawerControllerTests.swift; sourceTree = "<group>"; };
+		D7B50D7B19DB54A2000681E8 /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedMenuButton.swift; sourceTree = "<group>"; };
+		D7B50D7C19DB54A2000681E8 /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerBarButtonItem.swift; sourceTree = "<group>"; };
+		D7B50D7D19DB54A2000681E8 /* DrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; };
+		D7B50D7E19DB54A2000681E8 /* DrawerVisualState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerVisualState.swift; sourceTree = "<group>"; };
+		D7B50D8419DB554C000681E8 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		D7B50D8519DB554C000681E8 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		D7B50D8619DB554C000681E8 /* MainLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLeftMenuViewController.swift; sourceTree = "<group>"; };
+		D7B50D8719DB554C000681E8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7B50D4F19DB542C000681E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B50D6719DB542C000681E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7B50D4919DB542C000681E8 = {
+			isa = PBXGroup;
+			children = (
+				D7B50D8319DB54DF000681E8 /* ViewControllers */,
+				D7B50D7A19DB54A2000681E8 /* DrawerController */,
+				D7B50D5419DB542C000681E8 /* ExampleMMDrawerController */,
+				D7B50D6D19DB542C000681E8 /* ExampleMMDrawerControllerTests */,
+				D7B50D5319DB542C000681E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7B50D5319DB542C000681E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D5219DB542C000681E8 /* ExampleMMDrawerController.app */,
+				D7B50D6A19DB542C000681E8 /* ExampleMMDrawerControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7B50D5419DB542C000681E8 /* ExampleMMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D5719DB542C000681E8 /* AppDelegate.swift */,
+				D7B50D5C19DB542C000681E8 /* ViewController.swift */,
+				D7B50D5E19DB542C000681E8 /* Main.storyboard */,
+				D7B50D6119DB542C000681E8 /* Images.xcassets */,
+				D7B50D6319DB542C000681E8 /* LaunchScreen.xib */,
+				D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */,
+				D7B50D5519DB542C000681E8 /* Supporting Files */,
+			);
+			path = ExampleMMDrawerController;
+			sourceTree = "<group>";
+		};
+		D7B50D5519DB542C000681E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D5619DB542C000681E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7B50D6D19DB542C000681E8 /* ExampleMMDrawerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D7019DB542C000681E8 /* ExampleMMDrawerControllerTests.swift */,
+				D7B50D6E19DB542C000681E8 /* Supporting Files */,
+			);
+			path = ExampleMMDrawerControllerTests;
+			sourceTree = "<group>";
+		};
+		D7B50D6E19DB542C000681E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D6F19DB542C000681E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7B50D7A19DB54A2000681E8 /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D7B19DB54A2000681E8 /* AnimatedMenuButton.swift */,
+				D7B50D7C19DB54A2000681E8 /* DrawerBarButtonItem.swift */,
+				D7B50D7D19DB54A2000681E8 /* DrawerController.swift */,
+				D7B50D7E19DB54A2000681E8 /* DrawerVisualState.swift */,
+			);
+			path = DrawerController;
+			sourceTree = "<group>";
+		};
+		D7B50D8319DB54DF000681E8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7B50D8419DB554C000681E8 /* CenterViewController.swift */,
+				D7B50D8519DB554C000681E8 /* LeftMenuViewController.swift */,
+				D7B50D8619DB554C000681E8 /* MainLeftMenuViewController.swift */,
+				D7B50D8719DB554C000681E8 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7B50D5119DB542C000681E8 /* ExampleMMDrawerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B50D7419DB542C000681E8 /* Build configuration list for PBXNativeTarget "ExampleMMDrawerController" */;
+			buildPhases = (
+				D7B50D4E19DB542C000681E8 /* Sources */,
+				D7B50D4F19DB542C000681E8 /* Frameworks */,
+				D7B50D5019DB542C000681E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleMMDrawerController;
+			productName = ExampleMMDrawerController;
+			productReference = D7B50D5219DB542C000681E8 /* ExampleMMDrawerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7B50D6919DB542C000681E8 /* ExampleMMDrawerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B50D7719DB542C000681E8 /* Build configuration list for PBXNativeTarget "ExampleMMDrawerControllerTests" */;
+			buildPhases = (
+				D7B50D6619DB542C000681E8 /* Sources */,
+				D7B50D6719DB542C000681E8 /* Frameworks */,
+				D7B50D6819DB542C000681E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7B50D6C19DB542C000681E8 /* PBXTargetDependency */,
+			);
+			name = ExampleMMDrawerControllerTests;
+			productName = ExampleMMDrawerControllerTests;
+			productReference = D7B50D6A19DB542C000681E8 /* ExampleMMDrawerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7B50D4A19DB542C000681E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = yavuz;
+				TargetAttributes = {
+					D7B50D5119DB542C000681E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					D7B50D6919DB542C000681E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = D7B50D5119DB542C000681E8;
+					};
+				};
+			};
+			buildConfigurationList = D7B50D4D19DB542C000681E8 /* Build configuration list for PBXProject "ExampleMMDrawerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7B50D4919DB542C000681E8;
+			productRefGroup = D7B50D5319DB542C000681E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7B50D5119DB542C000681E8 /* ExampleMMDrawerController */,
+				D7B50D6919DB542C000681E8 /* ExampleMMDrawerControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7B50D5019DB542C000681E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B50D6019DB542C000681E8 /* Main.storyboard in Resources */,
+				D7B50D6519DB542C000681E8 /* LaunchScreen.xib in Resources */,
+				D7B50D6219DB542C000681E8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B50D6819DB542C000681E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7B50D4E19DB542C000681E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B50D8A19DB554C000681E8 /* MainLeftMenuViewController.swift in Sources */,
+				D7B50D8B19DB554C000681E8 /* MainViewController.swift in Sources */,
+				D7B50D5D19DB542C000681E8 /* ViewController.swift in Sources */,
+				D7B50D5819DB542C000681E8 /* AppDelegate.swift in Sources */,
+				D7B50D8119DB54A2000681E8 /* DrawerController.swift in Sources */,
+				D7B50D8219DB54A2000681E8 /* DrawerVisualState.swift in Sources */,
+				D7B50D5B19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld in Sources */,
+				D7B50D8919DB554C000681E8 /* LeftMenuViewController.swift in Sources */,
+				D7B50D8819DB554C000681E8 /* CenterViewController.swift in Sources */,
+				D7B50D8019DB54A2000681E8 /* DrawerBarButtonItem.swift in Sources */,
+				D7B50D7F19DB54A2000681E8 /* AnimatedMenuButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B50D6619DB542C000681E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B50D7119DB542C000681E8 /* ExampleMMDrawerControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7B50D6C19DB542C000681E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B50D5119DB542C000681E8 /* ExampleMMDrawerController */;
+			targetProxy = D7B50D6B19DB542C000681E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7B50D5E19DB542C000681E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B50D5F19DB542C000681E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7B50D6319DB542C000681E8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B50D6419DB542C000681E8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7B50D7219DB542C000681E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7B50D7319DB542C000681E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7B50D7519DB542C000681E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleMMDrawerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7B50D7619DB542C000681E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleMMDrawerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7B50D7819DB542C000681E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleMMDrawerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleMMDrawerController.app/ExampleMMDrawerController";
+			};
+			name = Debug;
+		};
+		D7B50D7919DB542C000681E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleMMDrawerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleMMDrawerController.app/ExampleMMDrawerController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7B50D4D19DB542C000681E8 /* Build configuration list for PBXProject "ExampleMMDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B50D7219DB542C000681E8 /* Debug */,
+				D7B50D7319DB542C000681E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B50D7419DB542C000681E8 /* Build configuration list for PBXNativeTarget "ExampleMMDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B50D7519DB542C000681E8 /* Debug */,
+				D7B50D7619DB542C000681E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7B50D7719DB542C000681E8 /* Build configuration list for PBXNativeTarget "ExampleMMDrawerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B50D7819DB542C000681E8 /* Debug */,
+				D7B50D7919DB542C000681E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */,
+			);
+			currentVersion = D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */;
+			path = ExampleMMDrawerController.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7B50D4A19DB542C000681E8 /* Project object */;
+}
