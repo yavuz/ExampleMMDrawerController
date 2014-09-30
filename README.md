@@ -1,4 +1,4 @@
-ExampleMMDrawerController
+Example MMDrawerController
 =========================
 
 Example MMDrawerController for Swift. Just simple left sidebar.
