@@ -7,6 +7,6 @@ Example MMDrawerController for Swift. Just simple left sidebar.
 ![Screenshot](http://yavuzyildirim.com/leftdrawer.png)
 
 Source
--------------------------
+------------------------
 
 https://github.com/sascha/DrawerController
