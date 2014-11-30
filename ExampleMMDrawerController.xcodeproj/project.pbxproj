@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D7B50D5819DB542C000681E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5719DB542C000681E8 /* AppDelegate.swift */; };
-		D7B50D5B19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */; };
 		D7B50D5D19DB542C000681E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D5C19DB542C000681E8 /* ViewController.swift */; };
-		D7B50D6019DB542C000681E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D5E19DB542C000681E8 /* Main.storyboard */; };
 		D7B50D6219DB542C000681E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D6119DB542C000681E8 /* Images.xcassets */; };
 		D7B50D6519DB542C000681E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B50D6319DB542C000681E8 /* LaunchScreen.xib */; };
 		D7B50D7119DB542C000681E8 /* ExampleMMDrawerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B50D7019DB542C000681E8 /* ExampleMMDrawerControllerTests.swift */; };
@@ -38,9 +36,7 @@
 		D7B50D5219DB542C000681E8 /* ExampleMMDrawerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMMDrawerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B50D5619DB542C000681E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7B50D5719DB542C000681E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleMMDrawerController.xcdatamodel; sourceTree = "<group>"; };
 		D7B50D5C19DB542C000681E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7B50D5F19DB542C000681E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7B50D6119DB542C000681E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7B50D6419DB542C000681E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D7B50D6A19DB542C000681E8 /* ExampleMMDrawerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleMMDrawerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,10 +95,8 @@
 			children = (
 				D7B50D5719DB542C000681E8 /* AppDelegate.swift */,
 				D7B50D5C19DB542C000681E8 /* ViewController.swift */,
-				D7B50D5E19DB542C000681E8 /* Main.storyboard */,
 				D7B50D6119DB542C000681E8 /* Images.xcassets */,
 				D7B50D6319DB542C000681E8 /* LaunchScreen.xib */,
-				D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */,
 				D7B50D5519DB542C000681E8 /* Supporting Files */,
 			);
 			path = ExampleMMDrawerController;
@@ -235,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7B50D6019DB542C000681E8 /* Main.storyboard in Resources */,
 				D7B50D6519DB542C000681E8 /* LaunchScreen.xib in Resources */,
 				D7B50D6219DB542C000681E8 /* Images.xcassets in Resources */,
 			);
@@ -261,7 +254,6 @@
 				D7B50D5819DB542C000681E8 /* AppDelegate.swift in Sources */,
 				D7B50D8119DB54A2000681E8 /* DrawerController.swift in Sources */,
 				D7B50D8219DB54A2000681E8 /* DrawerVisualState.swift in Sources */,
-				D7B50D5B19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld in Sources */,
 				D7B50D8919DB554C000681E8 /* LeftMenuViewController.swift in Sources */,
 				D7B50D8819DB554C000681E8 /* CenterViewController.swift in Sources */,
 				D7B50D8019DB54A2000681E8 /* DrawerBarButtonItem.swift in Sources */,
@@ -288,14 +280,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7B50D5E19DB542C000681E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7B50D5F19DB542C000681E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7B50D6319DB542C000681E8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -459,6 +443,7 @@
 				D7B50D7619DB542C000681E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7B50D7719DB542C000681E8 /* Build configuration list for PBXNativeTarget "ExampleMMDrawerControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -467,21 +452,9 @@
 				D7B50D7919DB542C000681E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D7B50D5919DB542C000681E8 /* ExampleMMDrawerController.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */,
-			);
-			currentVersion = D7B50D5A19DB542C000681E8 /* ExampleMMDrawerController.xcdatamodel */;
-			path = ExampleMMDrawerController.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D7B50D4A19DB542C000681E8 /* Project object */;
 }

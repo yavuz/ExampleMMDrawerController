@@ -36,6 +36,7 @@ class CenterViewController: MainViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewCont = UIView(frame: self.view.bounds)
+        self.viewCont.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         self.view.addSubview(viewCont)
         
         let barColor = UIColor(red: 247/255, green: 249/255, blue: 250/255, alpha: 1.0)
@@ -53,7 +54,7 @@ class CenterViewController: MainViewController {
         let backView = UIView()
         backView.backgroundColor = UIColor.whiteColor()
         self.viewCont = backView
-
+        
     }
     
     override func viewWillAppear(animated: Bool) {
