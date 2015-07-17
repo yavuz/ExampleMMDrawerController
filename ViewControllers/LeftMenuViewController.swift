@@ -10,14 +10,14 @@ import Foundation
 import UIKit
 
 class LeftMenuViewController: MainLeftMenuViewController {
-    override init() {
-        super.init()
-        self.restorationIdentifier = "LeftSideDrawerController"
-    }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.restorationIdentifier = "LeftSideDrawerController"
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewWillAppear(animated: Bool) {

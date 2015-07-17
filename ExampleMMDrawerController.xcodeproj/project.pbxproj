@@ -50,6 +50,7 @@
 		D7B50D8519DB554C000681E8 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		D7B50D8619DB554C000681E8 /* MainLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLeftMenuViewController.swift; sourceTree = "<group>"; };
 		D7B50D8719DB554C000681E8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D7F3E2291B59AC5D00A67195 /* DrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawerController.h; path = DrawerController/DrawerController.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 		D7B50D8319DB54DF000681E8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D7F3E2291B59AC5D00A67195 /* DrawerController.h */,
 				D7B50D8419DB554C000681E8 /* CenterViewController.swift */,
 				D7B50D8519DB554C000681E8 /* LeftMenuViewController.swift */,
 				D7B50D8619DB554C000681E8 /* MainLeftMenuViewController.swift */,

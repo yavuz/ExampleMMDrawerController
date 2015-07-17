@@ -26,10 +26,9 @@ class CenterViewController: MainViewController {
         self.restorationIdentifier = "ExampleCenterControllerRestorationKey"
     }
     
-    override init() {
-        super.init()
-        
-        self.restorationIdentifier = "ExampleCenterControllerRestorationKey"
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     

@@ -20,38 +20,42 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     var evo_drawerController: DrawerController? {
         var parentViewController = self.parentViewController
-            
-            while parentViewController != nil {
-                if parentViewController!.isKindOfClass(DrawerController) {
-                    return parentViewController as? DrawerController
-                }
-                
-                parentViewController = parentViewController!.parentViewController
+        
+        while parentViewController != nil {
+            if parentViewController!.isKindOfClass(DrawerController) {
+                return parentViewController as? DrawerController
             }
             
-            return nil
+            parentViewController = parentViewController!.parentViewController
+        }
+        
+        return nil
     }
     
     var evo_visibleDrawerFrame: CGRect {
         if let drawerController = self.evo_drawerController {
-            if self == drawerController.leftDrawerViewController || self.navigationController == drawerController.leftDrawerViewController {
-                var rect = drawerController.view.bounds
-                rect.size.width = drawerController.maximumLeftDrawerWidth
-                return rect
+            if drawerController.leftDrawerViewController != nil {
+                if self == drawerController.leftDrawerViewController || self.navigationController == drawerController.leftDrawerViewController {
+                    var rect = drawerController.view.bounds
+                    rect.size.width = drawerController.maximumLeftDrawerWidth
+                    return rect
+                }
             }
             
-            if self == drawerController.rightDrawerViewController || self.navigationController == drawerController.rightDrawerViewController {
-                var rect = drawerController.view.bounds
-                rect.size.width = drawerController.maximumRightDrawerWidth
-                rect.origin.x = CGRectGetWidth(drawerController.view.bounds) - rect.size.width
-                return rect
+            if drawerController.rightDrawerViewController != nil {
+                if self == drawerController.rightDrawerViewController || self.navigationController == drawerController.rightDrawerViewController {
+                    var rect = drawerController.view.bounds
+                    rect.size.width = drawerController.maximumRightDrawerWidth
+                    rect.origin.x = CGRectGetWidth(drawerController.view.bounds) - rect.size.width
+                    return rect
+                }
             }
-            }
-            
-            return CGRectNull
+        }
+        
+        return CGRectNull
     }
 }
 
@@ -90,12 +94,12 @@ public struct OpenDrawerGestureMode : RawOptionSetType, BooleanType {
     public static var allZeros: OpenDrawerGestureMode { return self(rawValue: 0) }
     public static func convertFromNilLiteral() -> OpenDrawerGestureMode { return self(rawValue: 0) }
     
-    static var None: OpenDrawerGestureMode { return self(rawValue: 0b0000) }
-    static var PanningNavigationBar: OpenDrawerGestureMode { return self(rawValue: 0b0001) }
-    static var PanningCenterView: OpenDrawerGestureMode { return self(rawValue: 0b0010) }
-    static var BezelPanningCenterView: OpenDrawerGestureMode { return self(rawValue: 0b0100) }
-    static var Custom: OpenDrawerGestureMode { return self(rawValue: 0b1000) }
-    static var All: OpenDrawerGestureMode { return self(rawValue: 0b1111) }
+    public static var None: OpenDrawerGestureMode { return self(rawValue: 0b0000) }
+    public static var PanningNavigationBar: OpenDrawerGestureMode { return self(rawValue: 0b0001) }
+    public static var PanningCenterView: OpenDrawerGestureMode { return self(rawValue: 0b0010) }
+    public static var BezelPanningCenterView: OpenDrawerGestureMode { return self(rawValue: 0b0100) }
+    public static var Custom: OpenDrawerGestureMode { return self(rawValue: 0b1000) }
+    public static var All: OpenDrawerGestureMode { return self(rawValue: 0b1111) }
 }
 
 public struct CloseDrawerGestureMode : RawOptionSetType, BooleanType {
@@ -109,15 +113,15 @@ public struct CloseDrawerGestureMode : RawOptionSetType, BooleanType {
     public static var allZeros: CloseDrawerGestureMode { return self(rawValue: 0) }
     public static func convertFromNilLiteral() -> CloseDrawerGestureMode { return self(rawValue: 0) }
     
-    static var None: CloseDrawerGestureMode { return self(rawValue: 0b0000000) }
-    static var PanningNavigationBar: CloseDrawerGestureMode { return self(rawValue: 0b0000001) }
-    static var PanningCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0000010) }
-    static var BezelPanningCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0000100) }
-    static var TapNavigationBar: CloseDrawerGestureMode { return self(rawValue: 0b0001000) }
-    static var TapCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0010000) }
-    static var PanningDrawerView: CloseDrawerGestureMode { return self(rawValue: 0b0100000) }
-    static var Custom: CloseDrawerGestureMode { return self(rawValue: 0b1000000) }
-    static var All: CloseDrawerGestureMode { return self(rawValue: 0b1111111) }
+    public static var None: CloseDrawerGestureMode { return self(rawValue: 0b0000000) }
+    public static var PanningNavigationBar: CloseDrawerGestureMode { return self(rawValue: 0b0000001) }
+    public static var PanningCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0000010) }
+    public static var BezelPanningCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0000100) }
+    public static var TapNavigationBar: CloseDrawerGestureMode { return self(rawValue: 0b0001000) }
+    public static var TapCenterView: CloseDrawerGestureMode { return self(rawValue: 0b0010000) }
+    public static var PanningDrawerView: CloseDrawerGestureMode { return self(rawValue: 0b0100000) }
+    public static var Custom: CloseDrawerGestureMode { return self(rawValue: 0b1000000) }
+    public static var All: CloseDrawerGestureMode { return self(rawValue: 0b1111111) }
 }
 
 public enum DrawerOpenCenterInteractionMode: Int {
@@ -170,7 +174,7 @@ private class DrawerCenterContainerView: UIView {
             if navBar != nil {
                 let navBarFrame = navBar!.convertRect(navBar!.bounds, toView: self)
                 if (self.centerInteractionMode == .NavigationBarOnly && CGRectContainsPoint(navBarFrame, point) == false) || (self.centerInteractionMode == .None) {
-                    hitView = nil;
+                    hitView = nil
                 }
             }
         }
@@ -181,7 +185,7 @@ private class DrawerCenterContainerView: UIView {
     private func navigationBarContainedWithinSubviewsOfView(view: UIView) -> UINavigationBar? {
         var navBar: UINavigationBar?
         
-        for subview in view.subviews as [UIView] {
+        for subview in view.subviews as! [UIView] {
             if view.isKindOfClass(UINavigationBar) {
                 navBar = view as? UINavigationBar
                 break
@@ -368,7 +372,17 @@ public class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     
     Note this value will change as soon as a pan gesture opens a drawer, or when a open/close animation is finished.
     */
-    public private(set) var openSide: DrawerSide = .None
+    public private(set) var openSide: DrawerSide = .None {
+        didSet {
+            self.centerContainerView.openSide = self.openSide
+            if self.openSide == .None {
+                self.leftDrawerViewController?.view.hidden = true
+                self.rightDrawerViewController?.view.hidden = true
+            }
+            
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
     
     private var startingPanRect: CGRect = CGRectNull
     
@@ -452,7 +466,7 @@ public class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     :returns: The newly-initialized drawer container view controller.
     */
     public init(centerViewController: UIViewController, leftDrawerViewController: UIViewController?, rightDrawerViewController: UIViewController?) {
-        super.init()
+        super.init(nibName: nil, bundle: nil)
         
         self.centerViewController = centerViewController
         self.leftDrawerViewController = leftDrawerViewController
@@ -1386,7 +1400,7 @@ public class DrawerController: UIViewController, UIGestureRecognizerDelegate {
         //If a rotation begins, we are going to cancel the current gesture and reset transform and anchor points so everything works correctly
         var gestureInProgress = false
         
-        for gesture in self.view.gestureRecognizers as [UIGestureRecognizer] {
+        for gesture in self.view.gestureRecognizers as! [UIGestureRecognizer] {
             if gesture.state == .Changed {
                 gesture.enabled = false
                 gesture.enabled = true
@@ -1512,7 +1526,7 @@ public class DrawerController: UIViewController, UIGestureRecognizerDelegate {
         
         if let centerViewController = self.centerViewController {
             if centerViewController.isKindOfClass(UINavigationController) {
-                let navBar = (self.centerViewController as UINavigationController).navigationBar
+                let navBar = (self.centerViewController as! UINavigationController).navigationBar
                 navigationBarRect = navBar.convertRect(navBar.bounds, toView: self.childControllerContainerView)
                 navigationBarRect = CGRectIntersection(navigationBarRect, self.childControllerContainerView.bounds)
             }
