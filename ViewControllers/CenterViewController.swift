@@ -27,7 +27,7 @@ class CenterViewController: MainViewController {
     }
     
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -35,7 +35,7 @@ class CenterViewController: MainViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewCont = UIView(frame: self.view.bounds)
-        self.viewCont.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        self.viewCont.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         self.view.addSubview(viewCont)
         
         let barColor = UIColor(red: 247/255, green: 249/255, blue: 250/255, alpha: 1.0)
@@ -58,22 +58,22 @@ class CenterViewController: MainViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        println("Center will appear")
+        print("Center will appear")
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        println("Center did appear")
+        print("Center did appear")
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        println("Center will disappear")
+        print("Center will disappear")
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        println("Center did disappear")
+        print("Center did disappear")
     }
     
     func setupLeftMenuButton() {

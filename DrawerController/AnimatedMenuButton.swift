@@ -27,6 +27,7 @@ public class AnimatedMenuButton : UIButton {
     let top: CAShapeLayer = CAShapeLayer()
     let middle: CAShapeLayer = CAShapeLayer()
     let bottom: CAShapeLayer = CAShapeLayer()
+    let strokeColor: UIColor
     
     // MARK: - Constants
     
@@ -41,26 +42,32 @@ public class AnimatedMenuButton : UIButton {
     
     // MARK: - Initializers
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
+        self.strokeColor = UIColor.grayColor()
         super.init(coder: aDecoder)
     }
+
+    override convenience init(frame: CGRect) {
+        self.init(frame: frame, strokeColor: UIColor.grayColor())
+    }
     
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-                
+    init(frame: CGRect, strokeColor: UIColor) {
+        self.strokeColor = strokeColor
+        super.init(frame: frame)
+        
         self.top.path = shortStroke;
         self.middle.path = shortStroke;
         self.bottom.path = shortStroke;
         
         for layer in [ self.top, self.middle, self.bottom ] {
             layer.fillColor = nil
-            layer.strokeColor = UIColor.grayColor().CGColor
+            layer.strokeColor = self.strokeColor.CGColor
             layer.lineWidth = 4
             layer.miterLimit = 2
             layer.lineCap = kCALineCapRound
             layer.masksToBounds = true
             
-            let strokingPath = CGPathCreateCopyByStrokingPath(layer.path, nil, 4, kCGLineCapRound, kCGLineJoinMiter, 4)
+            let strokingPath = CGPathCreateCopyByStrokingPath(layer.path, nil, 4, .Round, .Miter, 4)
             
             layer.bounds = CGPathGetPathBoundingBox(strokingPath)
             
@@ -125,8 +132,8 @@ public class AnimatedMenuButton : UIButton {
         self.middle.addAnimation(middleTransform, forKey: middleTransform.keyPath)
         self.bottom.addAnimation(bottomTransform, forKey: bottomTransform.keyPath)
         
-        self.top.setValue(topTransform.toValue, forKey: topTransform.keyPath)
-        self.middle.setValue(middleTransform.toValue, forKey: middleTransform.keyPath)
-        self.bottom.setValue(bottomTransform.toValue, forKey: bottomTransform.keyPath)
+        self.top.setValue(topTransform.toValue, forKey: topTransform.keyPath!)
+        self.middle.setValue(middleTransform.toValue, forKey: middleTransform.keyPath!)
+        self.bottom.setValue(bottomTransform.toValue, forKey: bottomTransform.keyPath!)
     }
 }

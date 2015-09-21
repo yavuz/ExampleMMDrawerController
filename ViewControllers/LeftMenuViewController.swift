@@ -16,28 +16,28 @@ class LeftMenuViewController: MainLeftMenuViewController {
         self.restorationIdentifier = "LeftSideDrawerController"
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        println("Left will appear")
+        print("Left will appear", terminator: "")
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        println("Left did appear")
+        print("Left did appear", terminator: "")
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        println("Left will disappear")
+        print("Left will disappear", terminator: "")
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        println("Left did disappear")
+        print("Left did disappear", terminator: "")
     }
     
     override func viewDidLoad() {
